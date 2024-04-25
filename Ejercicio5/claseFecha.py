@@ -13,3 +13,18 @@ class Fecha:
         self.__golesLoc = gL
         self.__golesVis = gV
     
+    def get_fecha(self):
+        return self.__fecha
+
+    def get_id_local(self):
+        return self.__idLoc
+
+    def get_id_visitante(self):
+        return self.__idVis
+
+    def get_goles_local(self):
+        return self.__golesLoc
+
+    def get_goles_visitante(self):
+        return self.__golesVis
+    
