@@ -10,13 +10,16 @@ class GestorMotos:
         archivo = open('Ejercicio4\\datosMotos.csv')
         reader = csv.reader(archivo, delimiter=',')
         for fila in reader:
-            pat = fila[0]
-            marca = fila[1]
-            nombre = fila[2]
-            apellido = fila[3]
-            km = int(fila[4])
-            unaMoto = Moto(pat, marca, nombre, apellido, km)
-            self.__motos.append(unaMoto)
+            if bandera:
+                bandera = False
+            else:
+                pat = fila[0]
+                marca = fila[1]
+                nombre = fila[2]
+                apellido = fila[3]
+                km = int(fila[4])
+                unaMoto = Moto(pat, marca, nombre, apellido, km)
+                self.__motos.append(unaMoto)
         archivo.close()
     
     def validarPatente(self, pat):

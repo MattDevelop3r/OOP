@@ -13,13 +13,16 @@ class GestorPedidos:
         archivo = open("Ejercicio4\\datosPedidos.csv")
         reader = csv.reader(archivo, delimiter=',')
         for fila in reader:
-            pat = fila[0]
-            id = int(fila[1])
-            com = fila[2]
-            tMin = int(fila[3])
-            prec = float(fila[4])
-            unPedido = Pedido(pat, id, com, tMin, 0, prec)
-            self.__pedidos.append(unPedido)
+            if bandera:
+                bandera = False
+            else:
+                pat = fila[0]
+                id = int(fila[1])
+                com = fila[2]
+                tMin = int(fila[3])
+                prec = float(fila[4])
+                unPedido = Pedido(pat, id, com, tMin, 0, prec)
+                self.__pedidos.append(unPedido)
         archivo.close()
     def cargaPedidos(self, gestorM):
         print("--- NUEVO PEDIDO ---\n")
