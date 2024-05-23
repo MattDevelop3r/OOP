@@ -9,9 +9,9 @@ if __name__ == '__main__':
     gestorC.lee_csv()
     gestorR.lee_csv()
     
-    opcion = 0
+    opcion = 10
 
-    while opcion != 3: # Si la opcion es 3 finaliza el programa
+    while opcion != 0: # Si la opcion es 0 finaliza el programa
         opcion = menu()
         if opcion == 1: # item a)
             cant_huespedes = int(input('\nIngrese la cantidad de huespedes: '))
@@ -21,3 +21,5 @@ if __name__ == '__main__':
             gestorR.emitir_listado(gestorC, fecha_ingresada)
         elif opcion == 3:
             gestorC.escribe_csv()
+        else: 
+            pass
