@@ -1,0 +1,50 @@
+{
+    "calefactores": [
+      {
+        "tipo": "electrico",
+        "marca": "Calorix",
+        "modelo": "EcoHeat 2000",
+        "pais_fabricacion": "Argentina",
+        "precio_lista": 8500,
+        "forma_pago": "cuotas",
+        "cantidad_cuotas": 3,
+        "promocion": "No",
+        "potencia_maxima": "2000 watts"
+      },
+      {
+        "tipo": "gas natural",
+        "marca": "WarmHome",
+        "modelo": "GasFlow Plus",
+        "pais_fabricacion": "Brasil",
+        "precio_lista": 9500,
+        "forma_pago": "contado",
+        "cantidad_cuotas": 1,
+        "promocion": "Si",
+        "matricula": "GN02-00002-07-075",
+        "calorias": "5000 kilocalorias/m3"
+      },
+      {
+        "tipo": "electrico",
+        "marca": "HeatWave",
+        "modelo": "ElectricPro X100",
+        "pais_fabricacion": "Chile",
+        "precio_lista": 7800,
+        "forma_pago": "contado",
+        "cantidad_cuotas": 1,
+        "promocion": "Si",
+        "potencia_maxima": "1500 watts"
+      },
+      {
+        "tipo": "gas natural",
+        "marca": "ThermoGas",
+        "modelo": "NaturalHeat 3000",
+        "pais_fabricacion": "Mexico",
+        "precio_lista": 11000,
+        "forma_pago": "cuotas",
+        "cantidad_cuotas": 6,
+        "promocion": "No",
+        "matricula": "GN03-00003-08-099",
+        "calorias": "4500 kilocalorias/m3"
+      }
+    ]
+  }
