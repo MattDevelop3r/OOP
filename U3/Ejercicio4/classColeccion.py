@@ -40,17 +40,21 @@ class Coleccion:
         print('Publicacion Cargada!!!')
     
     def carga_libros_impresos(self):
-        with open('libroimpreso.csv', 'r') as archivo:
-            reader = csv.reader(archivo, delimiter=',')
-            bandera = True
-            for fila in reader:
-                if bandera: 
-                    bandera = False
-                else: 
-                    titulo, categoria, precioBase, nomAutor, fecha, cantP = fila
-                    self.agregar_publicacion(LibroImpreso(titulo, categoria, float(precioBase), nomAutor, fecha, int(cantP)))
-        archivo.close()
-        print('archivo librosimpresos.csv leido')
+        try: 
+            with open('libroimpreso.csv', 'r') as archivo:
+                reader = csv.reader(archivo, delimiter=',')
+                bandera = True
+                for fila in reader:
+                    if bandera: 
+                        bandera = False
+                    else: 
+                        titulo, categoria, precioBase, nomAutor, fecha, cantP = fila
+                        self.agregar_publicacion(LibroImpreso(titulo, categoria, float(precioBase), nomAutor, fecha, int(cantP)))
+            archivo.close()
+        except FileNotFoundError:
+            print('Archivo no encontrado')
+        else: 
+            print('archivo librosimpresos.csv leido')
 
     def carga_audiolibros(self):
         with open('audiolibro.csv', 'r') as archivo:

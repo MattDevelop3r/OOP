@@ -25,5 +25,8 @@ class Edificio:
         return self.__lista_departamentos
 
     def agregar_departamento(self, id, nya, numP, numD, cantH, cantB, sup):
-        dpto = Departamento(id, nya, numP, numD, cantH, cantB, sup)  # Creación del Departamento dentro del Edificio (COMPOSICION)
-        self.__lista_departamentos.append(dpto)
+        try:
+            dpto = Departamento(id, nya, numP, numD, cantH, cantB, sup)  # Creación del Departamento dentro del Edificio (COMPOSICION)
+            self.__lista_departamentos.append(dpto)
+        except TypeError as e:
+            print(e)
