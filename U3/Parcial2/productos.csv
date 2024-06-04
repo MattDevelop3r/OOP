@@ -1,0 +1,11 @@
+tipoproducto;Nombre;fechaenv;fechavenc;temp;paisorigen;nrolote;costobase;%nitro;%oxig;%diox;%vapor;metodo
+C;Tocino;10/4/2024;10/4/2025;-17.7;Estados Unidos;AD980;1400;77;20;1;2;mecanico
+R;Leche Entera;20/1/2024;23/10/2024;5;Argentina;EF987;1399;AR-D004;;;;
+R;Manteca;3/3/2024;8/9/2024;10;Argentina;EC654;1200;AR-G007;;;;
+C;Nuggets de Pollo;12/5/2023;12/5/2024;-17.5;Argentina;IJ975;950;75;20;2;3;mecanico
+R;Yogurt Natural;5/4/2024;8/6/2024;8;Argentina;AB456;780;AR-A001;;;;
+C;Filete de Merluza;10/5/2024;10/7/2024;-15.5;Argentina;AB123;1800;78;20;0;2;mecanico
+R;Jamon Serrano;18/4/2024;20/6/2024;2.5;Espania;GH654;1800;AR-E005;;;;
+C;Hamburguesas Vegetarianas;11/5/2023;11/5/2024;-16;Argentina;AB579;1050;79;20;0;1;criogenico
+R;Queso Cheddar;21/5/2024;10/7/2024;4;Argentina;MN789;1150;AR-H008;;;;
+C;Frutos Rojos;3/5/2023;3/5/2024;-15;Argentina;QR813;1250;79;20;0;1;criogenico
